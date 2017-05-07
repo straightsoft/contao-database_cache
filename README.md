@@ -1,6 +1,6 @@
 # Contao Database Cache
 
-This module offers functionality for storing arbitrary values to database.
+This module offers functionality for caching arbitrary values to database.
 
 ## Technical instructions
 
