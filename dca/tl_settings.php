@@ -14,13 +14,25 @@ $arrDca = &$GLOBALS['TL_DCA']['tl_settings'];
 /**
  * Palettes
  */
-$arrDca['palettes']['default'] .= ';{db_cache_legend},dbCacheMaxTime;';
+$arrDca['palettes']['__selector__'][] = 'activateDbCache';
+$arrDca['palettes']['default'] .= ';{db_cache_legend},activateDbCache;';
+
+/**
+ * Subpalettes
+ */
+$arrDca['subpalettes']['activateDbCache'] = 'dbCacheMaxTime';
 
 /**
  * Fields
  */
 $arrFields = [
-    'dbCacheMaxTime' => [
+    'activateDbCache' => [
+        'label'     => &$GLOBALS['TL_LANG']['tl_settings']['activateDbCache'],
+        'exclude'   => true,
+        'inputType' => 'checkbox',
+        'eval'      => ['tl_class' => 'w50', 'submitOnChange' => true]
+    ],
+    'dbCacheMaxTime'  => [
         'label'     => &$GLOBALS['TL_LANG']['tl_settings']['dbCacheMaxTime'],
         'exclude'   => true,
         'inputType' => 'timePeriod',

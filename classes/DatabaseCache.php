@@ -10,6 +10,11 @@ class DatabaseCache
 
     public static function getValue($strKey)
     {
+        if (\Config::get('activateDbCache'))
+        {
+            return false;
+        }
+
         $objDatabase = \Database::getInstance();
 
         // clean expired values at first (self-purification)

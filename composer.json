@@ -1,6 +1,6 @@
 {
     "name": "straightsoft/contao-database_cache",
-    "description": "This module offers functionality for storing request results to database.",
+    "description": "This module offers functionality for caching request results to database.",
     "keywords": [
         "contao",
         "request",
