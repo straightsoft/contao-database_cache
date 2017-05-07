@@ -1,0 +1,43 @@
+{
+    "name": "straightsoft/contao-database_cache",
+    "description": "This module offers functionality for storing request results to database.",
+    "keywords": [
+        "contao",
+        "request",
+        "cache",
+        "db",
+        "database",
+        "module"
+    ],
+    "type": "contao-module",
+    "homepage": "https://bitbucket.org/straightsoft/contao-database_cache",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "StraightSoft",
+            "email": "info@straightsoft.de",
+            "homepage": "https://www.straightsoft.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://bitbucket.org/straightsoft/contao-database_cache/issues"
+    },
+    "require": {
+        "php": "~5.6 || ^7.0",
+        "contao/core": ">=3.5,<4-dev",
+        "heimrichhannot/contao-haste_plus": "~1.6"
+    },
+    "autoload": {
+        "classmap": [
+            ""
+        ]
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/database_cache"
+            }
+        }
+    }
+}
