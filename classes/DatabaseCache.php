@@ -10,7 +10,7 @@ class DatabaseCache
 
     public static function getValue($strKey)
     {
-        if (\Config::get('activateDbCache'))
+        if (!\Config::get('activateDbCache'))
         {
             return false;
         }
