@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_db_cache'] = [
             'sql' => "varchar(255) NOT NULL default ''"
         ],
         'cacheValue'     => [
-            'sql' => "text NULL"
+            'sql' => "mediumtext NULL"
         ],
     ]
 ];
